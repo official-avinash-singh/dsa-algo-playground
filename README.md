@@ -35,4 +35,4 @@ This repository is dedicated to practicing and mastering Data Structures and Alg
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/dsa-playground.git
+   git clone https://github.com/official-avinash-singh/dsa-algo-playground.git
