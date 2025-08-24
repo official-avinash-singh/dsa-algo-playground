@@ -16,3 +16,17 @@ function reverseArray(inputArray){
     return reversedArray;
 }
 console.log(reverseArray(arr));
+
+arr = [1, 2, 5, 6, 7];
+// Method 2 - Better solution
+function reverseArray(inputArray){
+    let left, right;
+    let temp;
+    for(left = 0, right = inputArray.length-1; left<right; left = left+1, right = right-1){
+        temp = inputArray[left];
+        inputArray[left] = inputArray[right];
+        inputArray[right] = temp;
+    }
+    return inputArray;
+}
+console.log(reverseArray(arr));
