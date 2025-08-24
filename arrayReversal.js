@@ -18,7 +18,7 @@ function reverseArray(inputArray){
 console.log(reverseArray(arr));
 
 arr = [1, 2, 5, 6, 7];
-// Method 2 - Better solution
+// Method 02 - Better solution
 function reverseArray(inputArray){
     let left, right;
     let temp;
