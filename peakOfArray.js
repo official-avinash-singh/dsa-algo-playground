@@ -7,4 +7,12 @@ Assumption 2: array can have repetative terms
 */
 
 
-console.log(peakOfArray(arr1));
+let arr = [1,3,5,8,4,0];
+let peakOfArray = (arr) =>{
+    for(let i=0; i< arr.length; i++){
+        if(arr[i]>arr[i+1]){
+            return `${arr[i]} is peak of the Array at index ${i}`;
+        }
+    }
+}
+console.log(peakOfArray(arr));
