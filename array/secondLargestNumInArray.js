@@ -8,8 +8,12 @@ let secondLargest = (arr) =>{
     let secondLargestnum;
     for(let i = 1; i<arr.length; i++){
         if(arr[i]>arr[i-1]){
-            secondLargestnum = largest;
             largest = arr[i];
+        }
+    }
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i]>secondLargestnum && arr[i] != largest){
+            secondLargestnum = arr[i];
         }
     }
     return secondLargestnum;
