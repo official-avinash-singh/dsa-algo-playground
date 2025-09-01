@@ -8,7 +8,7 @@ let arr1 = [1,2,4,5,8,9,5,0]
 let arr2 = [1,3,4,5,6,7,7,4];
 
 // Bruteforce Way
-let duplicateValArr = (arr1, arr2) =>{
+let duplicateValArray = (arr1, arr2) =>{
     let duplicateArray = [];
     for(let i=0; i<arr1.length; i++){
         for(let j=0; j<arr2.length; j++){
@@ -19,7 +19,7 @@ let duplicateValArr = (arr1, arr2) =>{
     }
     return duplicateArray;
 }
-console.log(duplicateValArr(arr1, arr2));
+console.log(duplicateValArray(arr1, arr2));
 
 // Using Set
 let duplicateValArr = (arr1, arr2) =>{
