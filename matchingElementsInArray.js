@@ -24,12 +24,18 @@ console.log(commonElements1(arr1, arr2));
 
 
 // Better Approach
-// Brtueforce method
 arr1 = [1,2,3,4,5];
 arr2 = [2,4,6];
-let commonElements2 = (arr1, arr2) => {
-    
-
+arr1 = [1,2,3,2,4,5];
+arr2 = [2,4,2,6,1];
+let commonElementsFunc2 = (arr1, arr2) => {
+    let set = new Set(arr1);
+    let commonElementsArr = [];
+    for(let i=0; i<arr2.length; i++){
+        if(set.has(arr2[i])){
+            commonElementsArr.push(arr2[i]);
+        }
+    }
+    return commonElementsArr;
 }
-
-console.log(commonElements2(arr1, arr2));
+console.log(commonElementsFunc2(arr1, arr2));
